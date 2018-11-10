@@ -280,6 +280,24 @@ var Offsets = function Offsets(sw_vers, productname) {
         linkcode_gadget: 0x188214890
     };
     
+     offsets["iPhone 5S"][12.01] = {
+        vtable: 0x23b419058,
+        disableprimitivegigacage: 0x1881cbf54,
+        g_gigacagebaseptrs: 0x1b80e4000,
+        g_typedarraypoisons: kOFFUnknown,
+        startfixedmempool: kOFFUnknown,
+        endfixedmempool: kOFFUnknown,
+        jit_writeseperateheaps_func: 0x1ba0590d0,
+        usefastpermissions_jitcopy: 0x1b80e8018,
+        ptr_stack_check_guard: 0x1b9fa1a18,
+        dlsym: 0x180923d64,
+        longjmp: 0x180adc630,
+        callbacks: 0x1b80e81a8,
+        modelio_popx8: kOFFUnknown, /*This is modelio base in UFO finder idk if it is correct*/
+        linkcode_gadget: kOFFUnknown, //Thanks to ivanhrabcak to finding these.
+    };
+
+    
     offsets["iPhone SE"][12.01] = {
         vtable: 0x23b419058,
         disableprimitivegigacage: 0x1881cbf54,
