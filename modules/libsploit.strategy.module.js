@@ -225,7 +225,7 @@ function strategy_select() {
     else if(osversion_between(12.0, 12.01)){
 
          //We firstly need to check if the client's device model is of one that this strategy supports
-        var supported_devices = ["iPhone 6S", "iPhone SE", "iPhone 8+"];
+        var supported_devices = ["iPhone 5S", "iPhone 6S", "iPhone SE", "iPhone 8+"];
         var supported = false;
 
         if(!device.ProductName) return false; //Sanity check making sure to only continue if the product name of the device was detected
